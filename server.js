@@ -49,6 +49,11 @@ app.get('/about', (req, res) => {
     })
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page'
+    })
+});
 // creat a route at /bad, send back json with an error message property
 
 app.get('/bad', (req, res) => {
